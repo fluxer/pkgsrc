@@ -24,7 +24,6 @@ PKGCONFIG_OVERRIDE+=	libsecret/libsecret.pc.in
 
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.44.0
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../lang/vala/buildlink3.mk"
 .include "../../security/libgcrypt/buildlink3.mk"
 .include "options.mk"
 .include "../../mk/bsd.pkg.mk"
