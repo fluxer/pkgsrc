@@ -15,7 +15,8 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config gmake gsed bash:run
 USE_PKGLOCALEDIR=	yes
 USE_NCURSES=		yes
-LDFLAGS.DragonFly=	-lm
+LDFLAGS.Linux+=		-lm -pthread
+LDFLAGS.DragonFly+=	-lm
 LDFLAGS.SunOS+=		-lm -lsocket -lnsl
 CPPFLAGS.NetBSD+=	-D__u32=uint32_t -D__u64=uint64_t
 CPPFLAGS.NetBSD+=	-Dbswap_16=bswap16 -Dbswap_32=bswap32
