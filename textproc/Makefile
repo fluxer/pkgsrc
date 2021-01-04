@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1184 2020/12/19 10:22:45 nia Exp $
+# $NetBSD: Makefile,v 1.1186 2021/01/01 14:01:03 pin Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -148,6 +148,7 @@ SUBDIR+=	bat
 SUBDIR+=	bibclean
 SUBDIR+=	biblook
 SUBDIR+=	bibparse
+SUBDIR+=	bk
 SUBDIR+=	bsdgrep-devel
 SUBDIR+=	btparse
 SUBDIR+=	c2html
@@ -501,6 +502,7 @@ SUBDIR+=	multimarkdown
 SUBDIR+=	mxml
 SUBDIR+=	mythes
 SUBDIR+=	namazu
+SUBDIR+=	nanogrep
 SUBDIR+=	nbsed
 SUBDIR+=	ndtpd
 SUBDIR+=	nxml-mode

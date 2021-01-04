@@ -716,6 +716,7 @@ rtree			Enable R-tree support.
 ruby			Enable Ruby support.
 ruby-build-ri-db	Build and install database for Ruby's ri utility.
 rust			Enable Rust support.
+rust-cargo-static	Build cargo semi-statically with built-in curl+openssl
 rust-llvm		Use Rust internal LLVM in builds.
 samba			Enable Samba file and print services support.
 samplerate		Enable libsamplerate support.
@@ -879,6 +880,7 @@ via-padlock		Enable support for the VIA PadLock Security Engine.
 vice-cpuhistory		Enable the 65xx cpu history feature.
 vice-ethernet		Enable Ethernet cartridge support.
 vice-fullscreen		Enable full-screen support.
+vice-headless		Choose the headless (no GUI) build.
 vice-hwscaling		Enable hardware-assisted screen scaling.
 vice-x64		Enable building of the old x64 emulator.
 vidix			Enable VIDIX (Video Interface for *niX support).
