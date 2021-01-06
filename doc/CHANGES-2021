@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2021,v 1.158 2021/01/04 18:05:11 wiz Exp $
+$NetBSD: CHANGES-2021,v 1.171 2021/01/06 01:22:09 gutteridge Exp $
 
 Changes to the packages collection and infrastructure in 2021:
 
@@ -193,3 +193,20 @@ Changes to the packages collection and infrastructure in 2021:
 	Updated games/doomlegacy to 1.48.8 [micha 2021-01-04]
 	Updated print/poppler to 21.01.0 [wiz 2021-01-04]
 	Updated graphics/tiff to 4.2.0 [wiz 2021-01-04]
+	Updated multimedia/assimp to 5.0.1nb1 [gutteridge 2021-01-05]
+	Updated lang/npm to 6.14.10 [adam 2021-01-05]
+	Updated lang/nodejs to 14.15.4 [adam 2021-01-05]
+	Updated lang/nodejs12 to 12.20.1 [adam 2021-01-05]
+	Updated lang/nodejs10 to 10.23.1 [adam 2021-01-05]
+	Updated textproc/bk to 0.5.2 [pin 2021-01-05]
+	Updated security/vault to 1.6.1 [he 2021-01-05]
+	Added sysutils/lsd version 0.19.0 [pin 2021-01-05]
+	Updated devel/libebml to 1.4.1 [adam 2021-01-05]
+	Updated multimedia/mkvtoolnix to 52.0.0 [adam 2021-01-05]
+	Updated net/unison-snapshot to 2.51.3.70nb4 [gdt 2021-01-05]
+	Updated devel/netcdf to 4.6.1nb11 [wiz 2021-01-05]
+	Updated emulators/nono to 0.1.5 [ryoon 2021-01-05]
+	Updated graphics/kvantum to 0.18.0 [pin 2021-01-05]
+	Added audio/pt2-clone version 1.28 [js 2021-01-06]
+	Updated audio/py-music21 to 6.5.0 [gutteridge 2021-01-06]
+	Updated editors/xfce4-mousepad to 0.5.1 [gutteridge 2021-01-06]
