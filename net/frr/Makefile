@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2020/12/31 20:04:13 nia Exp $
+# $NetBSD: Makefile,v 1.4 2021/01/06 11:53:52 kardel Exp $
 
 GITHUB_PROJECT=	frr
 VERSION=	7.5
@@ -16,10 +16,11 @@ CONFLICTS=	quagga-[0-9]*
 
 WRKSRC=			${WRKDIR}/frr-frr-${VERSION}
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake perl bash pkg-config autoconf automake autoreconf
+USE_TOOLS+=		gmake perl bash pkg-config autoconf automake autoreconf bison
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		yes
 BUILD_DEFS=		VARBASE
+BISON_REQD=		3.3
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
