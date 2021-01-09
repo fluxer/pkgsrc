@@ -42,7 +42,7 @@ ${PLIST.introspection}lib/girepository-1.0/PangoCairo-1.0.typelib
 ${PLIST.introspection}lib/girepository-1.0/PangoFT2-1.0.typelib
 ${PLIST.introspection}lib/girepository-1.0/PangoFc-1.0.typelib
 ${PLIST.introspection}lib/girepository-1.0/PangoOT-1.0.typelib
-${PLIST.X11introspection}lib/girepository-1.0/PangoXft-1.0.typelib
+${PLIST.x11introspection}lib/girepository-1.0/PangoXft-1.0.typelib
 lib/libpango-1.0.so
 lib/libpango-1.0.so.0
 lib/libpango-1.0.so.0.4600.1
@@ -67,4 +67,4 @@ ${PLIST.introspection}share/gir-1.0/PangoCairo-1.0.gir
 ${PLIST.introspection}share/gir-1.0/PangoFT2-1.0.gir
 ${PLIST.introspection}share/gir-1.0/PangoFc-1.0.gir
 ${PLIST.introspection}share/gir-1.0/PangoOT-1.0.gir
-${PLIST.X11introspection}share/gir-1.0/PangoXft-1.0.gir
+${PLIST.x11introspection}share/gir-1.0/PangoXft-1.0.gir

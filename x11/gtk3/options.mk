@@ -2,7 +2,7 @@
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gtk3
 PKG_SUPPORTED_OPTIONS+=	gtk3-atk-bridge cups debug
-PKG_SUPPORTED_OPTIONS+=	wayland x11
+PKG_SUPPORTED_OPTIONS+=	wayland x11 introspection
 .if exists(/System/Library/Frameworks/Quartz.framework)
 PKG_SUPPORTED_OPTIONS+=	quartz
 .endif
@@ -52,12 +52,25 @@ CONFIGURE_ENV+=		ac_cv_header_X11_extensions_Xinerama_h=no
 CONFIGURE_ENV+=		ac_cv_lib_Xinerama_XineramaQueryExtension=no
 PLIST.x11=		yes
 
-.  if !empty(PKG_OPTIONS:Mgtk3-atk-bridge)
+.if !empty(PKG_OPTIONS:Mgtk3-atk-bridge)
 BUILDLINK_API_DEPENDS.at-spi2-atk+=	at-spi2-atk>=2.6.1
-.    include "../../devel/at-spi2-atk/buildlink3.mk"
-.  else
+.  include "../../devel/at-spi2-atk/buildlink3.mk"
+.else
 CONFIGURE_ARGS+=	--without-atk-bridge
+.endif
+
+PLIST_VARS+=		introspection x11introspection
+.if !empty(PKG_OPTIONS:Mintrospection)
+.  if !empty(PKG_OPTIONS:Mx11)
+PLIST.x11introspection	= yes
 .  endif
+BUILDLINK_DEPMETHOD.gobject-introspection:=	build
+BUILDLINK_API_DEPENDS.gobject-introspection+=	gobject-introspection>=1.39.0
+.include "../../devel/gobject-introspection/buildlink3.mk"
+CONFIGURE_ARGS+=	--enable-introspection=yes
+.else
+CONFIGURE_ARGS+=	--enable-introspection=no
+.endif
 
 BUILDLINK_API_DEPENDS.Xft2+=	Xft2>=2.1.2nb2
 

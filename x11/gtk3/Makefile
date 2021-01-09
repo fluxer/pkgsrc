@@ -78,9 +78,6 @@ BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.57.2
 .include "../../devel/glib2/buildlink3.mk"
 BUILDLINK_API_DEPENDS.gdk-pixbuf2+=	gdk-pixbuf2>=2.30.0
 .include "../../graphics/gdk-pixbuf2/buildlink3.mk"
-BUILDLINK_DEPMETHOD.gobject-introspection:=	build
-BUILDLINK_API_DEPENDS.gobject-introspection+=	gobject-introspection>=1.39.0
-.include "../../devel/gobject-introspection/buildlink3.mk"
 
 .include "options.mk"
 

@@ -6,7 +6,7 @@ PKG_SUGGESTED_OPTIONS=	x11 introspection
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_VARS+=		coretext quartz x11 thai introspection X11introspection
+PLIST_VARS+=		coretext quartz x11 thai introspection x11introspection
 
 ###
 ### X11 support
@@ -53,7 +53,7 @@ PLIST.quartz=		yes
 .if !empty(PKG_OPTIONS:Mintrospection)
 PLIST.introspection=		yes
 .  if !empty(PKG_OPTIONS:Mx11)
-PLIST.X11introspection=		yes
+PLIST.x11introspection=		yes
 .  endif
 MESON_ARGS+=		-D introspection=true
 BUILDLINK_DEPMETHOD.gobject-introspection=	build
