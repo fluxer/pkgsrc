@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2021,v 1.195 2021/01/07 17:14:14 leot Exp $
+$NetBSD: CHANGES-2021,v 1.210 2021/01/08 21:39:13 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2021:
 
@@ -240,3 +240,22 @@ Changes to the packages collection and infrastructure in 2021:
 	Updated lang/php74 to 7.4.14 [taca 2021-01-07]
 	Updated databases/libpqxx to 7.3.0 [prlw1 2021-01-07]
 	Updated net/amazon-ecs-cli to 1.21.0 [leot 2021-01-07]
+	Updated misc/rhash to 1.4.1 [adam 2021-01-07]
+	Updated www/py-pylint-django to 2.4.0 [adam 2021-01-07]
+	Updated security/gsasl to 1.10.0 [wiz 2021-01-07]
+	Updated sysutils/broot to 1.1.11 [pin 2021-01-08]
+	Updated sysutils/beats to 6.8.13 [he 2021-01-08]
+	Updated www/firefox to 84.0.2 [ryoon 2021-01-08]
+	Updated www/firefox-l10n to 84.0.2 [ryoon 2021-01-08]
+	Updated www/py-pylint-django to 2.4.1 [adam 2021-01-08]
+	Updated net/py-botocore to 1.19.51 [adam 2021-01-08]
+	Updated net/py-boto3 to 1.16.51 [adam 2021-01-08]
+	Updated net/py-awscli to 1.18.211 [adam 2021-01-08]
+	Added net/avahi-ui version 0.8 [nia 2021-01-08]
+	Updated textproc/ruby-nokogiri to 1.11.1 [tsutsui 2021-01-08]
+	Added devel/nancy version 1.0.5 [maya 2021-01-08]
+	Updated www/firefox78 to 78.6.1 [ryoon 2021-01-08]
+	Updated www/firefox78-l10n to 78.6.1 [ryoon 2021-01-08]
+	Updated print/qpdf to 10.1.0 [ryoon 2021-01-08]
+	Updated security/p11-kit to 0.23.22nb1 [triaxx 2021-01-08]
+	Updated emulators/ucon64 to 2.2.1nb2 [wiz 2021-01-08]
