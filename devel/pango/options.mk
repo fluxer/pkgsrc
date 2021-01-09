@@ -1,12 +1,12 @@
 # $NetBSD: options.mk,v 1.17 2019/08/16 10:43:24 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.pango
-PKG_SUPPORTED_OPTIONS=	libthai quartz x11
-PKG_SUGGESTED_OPTIONS=	x11
+PKG_SUPPORTED_OPTIONS=	libthai quartz x11 introspection
+PKG_SUGGESTED_OPTIONS=	x11 introspection
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_VARS+=		coretext quartz x11 thai
+PLIST_VARS+=		coretext quartz x11 thai introspection X11introspection
 
 ###
 ### X11 support
@@ -45,4 +45,19 @@ PLIST.coretext=		yes
 ### installs its coretext header file if cairo was built with "quartz" option
 PLIST.quartz=		yes
 .  endif
+.endif
+
+###
+### introspection support
+###
+.if !empty(PKG_OPTIONS:Mintrospection)
+PLIST.introspection=		yes
+.  if !empty(PKG_OPTIONS:Mx11)
+PLIST.X11introspection=		yes
+.  endif
+MESON_ARGS+=		-D introspection=true
+BUILDLINK_DEPMETHOD.gobject-introspection=	build
+.include "../../devel/gobject-introspection/buildlink3.mk"
+.else
+MESON_ARGS+=		-D introspection=false
 .endif
