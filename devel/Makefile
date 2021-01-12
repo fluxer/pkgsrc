@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3309 2021/01/08 17:13:18 maya Exp $
+# $NetBSD: Makefile,v 1.3313 2021/01/11 13:31:21 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -2792,6 +2792,7 @@ SUBDIR+=	ruby-filesize
 SUBDIR+=	ruby-flexmock
 SUBDIR+=	ruby-forwardable-extended
 SUBDIR+=	ruby-gemcutter
+SUBDIR+=	ruby-generator
 SUBDIR+=	ruby-getopt
 SUBDIR+=	ruby-gettext
 SUBDIR+=	ruby-gettext-activerecord
@@ -2906,7 +2907,9 @@ SUBDIR+=	ruby-rspec-support
 SUBDIR+=	ruby-rspec_junit_formatter
 SUBDIR+=	ruby-ruby2_keywords
 SUBDIR+=	ruby-rugged
+SUBDIR+=	ruby-scanf
 SUBDIR+=	ruby-semantic_puppet
+SUBDIR+=	ruby-semverse
 SUBDIR+=	ruby-setup
 SUBDIR+=	ruby-sexp-processor
 SUBDIR+=	ruby-shoulda-context
@@ -2938,6 +2941,7 @@ SUBDIR+=	ruby-tty-cursor
 SUBDIR+=	ruby-tty-prompt
 SUBDIR+=	ruby-tty-reader
 SUBDIR+=	ruby-tty-screen
+SUBDIR+=	ruby-tty-table
 SUBDIR+=	ruby-turn
 SUBDIR+=	ruby-uglifier
 SUBDIR+=	ruby-uuidtools
