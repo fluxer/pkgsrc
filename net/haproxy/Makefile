@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.69 2020/12/06 11:22:52 adam Exp $
+# $NetBSD: Makefile,v 1.71 2021/01/16 08:33:26 adam Exp $
 
-DISTNAME=	haproxy-2.3.2
+DISTNAME=	haproxy-2.3.4
 CATEGORIES=	net www
 MASTER_SITES=	https://www.haproxy.org/download/${PKGVERSION_NOREV:R}/src/
 
@@ -55,4 +55,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/examples/*.cfg ${DESTDIR}${EGDIR}/
 
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../mk/atomic64.mk"
 .include "../../mk/bsd.pkg.mk"

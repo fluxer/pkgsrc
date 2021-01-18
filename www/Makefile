@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1499 2021/01/03 11:00:01 adam Exp $
+# $NetBSD: Makefile,v 1.1501 2021/01/14 15:09:03 pin Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -79,7 +79,6 @@ SUBDIR+=	checkbot
 SUBDIR+=	cherokee
 SUBDIR+=	clearsilver
 SUBDIR+=	clearsilver-base
-SUBDIR+=	cliqz
 SUBDIR+=	clisp-fastcgi
 SUBDIR+=	contao35
 SUBDIR+=	cppcms
@@ -972,6 +971,7 @@ SUBDIR+=	siege
 SUBDIR+=	sitecopy
 SUBDIR+=	snarf
 SUBDIR+=	snownews
+SUBDIR+=	so
 SUBDIR+=	spawn-fcgi
 SUBDIR+=	spdylay
 SUBDIR+=	sqtop

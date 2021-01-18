@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.926 2021/01/05 12:59:46 pin Exp $
+# $NetBSD: Makefile,v 1.928 2021/01/17 19:32:45 pin Exp $
 #
 
 COMMENT=	System utilities
@@ -159,6 +159,7 @@ SUBDIR+=	detox
 SUBDIR+=	devkitd
 SUBDIR+=	dfc
 SUBDIR+=	di
+SUBDIR+=	direnv
 SUBDIR+=	direvent
 SUBDIR+=	dirsize
 SUBDIR+=	dirvish
@@ -182,6 +183,7 @@ SUBDIR+=	dtc
 SUBDIR+=	dtpstree
 SUBDIR+=	dupeguru
 SUBDIR+=	duplicity
+SUBDIR+=	dust
 SUBDIR+=	dvd+rw-tools
 SUBDIR+=	dvdisaster
 SUBDIR+=	dvdrecord
