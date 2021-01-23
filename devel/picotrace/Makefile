@@ -3,7 +3,7 @@
 DISTNAME=	picotrace-20200318
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=krytarowski/}
-GITHUB_TAG=	${PKGVERSION_NOREV}
+GITHUB_TAG=	b2b7d9922f189021dff289d306413058b594811d
 
 MAINTAINER=	kamil@NetBSD.org
 HOMEPAGE=	https://github.com/krytarowski/picotrace/
